@@ -1,0 +1,19 @@
+class NailAppointmentApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Nail Appointment',
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+        scaffoldBackgroundColor: Colors.pink[50],
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.pink, // Button background color
+            foregroundColor: Colors.white, // Button text color
+          ),
+        ),
+      ),
+      home: ServicesScreen(),
+    );
+  }
+}
